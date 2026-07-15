@@ -14,9 +14,9 @@ import type { FeedKey } from "./lib/hn";
 const LIST_WIDTH_KEY = "hn-tablet-list-width";
 // The list column also hosts the sidebar (64-208px), so these bounds leave
 // enough room for the row content next to it either way.
-const DEFAULT_LIST_WIDTH = 540;
-const MIN_LIST_WIDTH = 460;
-const MAX_LIST_WIDTH = 760;
+const DEFAULT_LIST_WIDTH = 800;
+const MIN_LIST_WIDTH = 600;
+const MAX_LIST_WIDTH = 1200;
 
 export function AppShell({ initialRoute }: { initialRoute: Route }) {
   const [feed, setFeed] = useState<FeedKey>(initialRoute.type === "feed" ? initialRoute.feed : "top");
